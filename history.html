@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'chinese-black-sev': 'rgb(17, 17, 17, 70%)',
+            'chinese-black': '#111111',
+            'lightgreen': '#B4F461',
+            'gray30': 'rgb(17, 17, 17, 30%)',
+            'gray10': 'rgb(17, 17, 17, 10%)',
+            'floral-white': '#F9F7F3'
+          },
+        },
+      },
+    }
+</script>
+
+</head>
+<body class="lexend-font">
+    <!-- header section start -->
+    <header class="bg-floral-white">
+        <div class="flex justify-between items-center py-6 max-w-screen-xl mx-auto">
+            <div>
+                <button class="btn px-6 bg-lightgreen text-lg">Blog</button>
+            </div>
+            <div class="flex items-center p-3">
+                <img class="pr-3" src="/assets/logo.png" alt="logo">
+                <div class="font-semibold text-lg">Donate Bangladesh</div>
+            </div>
+            <div class="flex items-center p-3">
+                <img class="pr-3" src="/assets/coin.png" alt="coin">
+                <div class="font-medium text-lg">5500 BDT</div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main class="max-w-screen-xl mx-auto">
+        <div class="flex justify-center space-x-4 pt-20">
+            <button class="btn bg-transparent font-medium px-8 border-gray30 text-lg">Donation</button>
+            <button class="btn font-medium px-8 bg-lightgreen text-lg">History</button>
+        </div>
+        <div class="border-solid border-gray10 border rounded-2xl m-8 items-center">
+            <div class="space-y-4 p-8">
+                <div class="text-chinese-black font-bold text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</div>
+                <p class="text-chinese-black-sev text-justify">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </div>
+        </div>
+        <div class="border-solid border-gray10 border rounded-2xl m-8 items-center">
+            <div class="space-y-4 p-8">
+                <div class="text-chinese-black font-bold text-lg">6500 Taka is Donated for Flood Relief in Feni,Bangladesh</div>
+                <p class="text-chinese-black-sev text-justify">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </div>
+        </div>
+        <div class="border-solid border-gray10 border rounded-2xl m-8 items-center">
+            <div class="space-y-4 p-8">
+                <div class="text-chinese-black font-bold text-lg">15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</div>
+                <p class="text-chinese-black-sev text-justify">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </div>
+        </div>
+    </main>
+    <!-- main section end -->
+
+
+
+    <!-- footer section start -->
+    <footer>
+        <div class="m-20"></div>
+    </footer>
+    <!-- footer section end -->
+</body>
+</html>
