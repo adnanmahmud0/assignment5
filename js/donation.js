@@ -1,4 +1,4 @@
-function processDonation(donationId, totalDonationId) {
+function processDonation(donationId, totalDonationId, location) {
     const balance = getTextFieldValueById('balance');
     const donationAmount = getInputFieldValueById(donationId);
     const totalDonationAmount = getTextFieldValueById(totalDonationId);
@@ -17,6 +17,9 @@ function processDonation(donationId, totalDonationId) {
         document.getElementById('balance').innerText = updatedBalance;
 
         showPopup('success-popup');
+
+        history(donationAmount, location);
+
     } else {
         alert("Out of balance.");
     }

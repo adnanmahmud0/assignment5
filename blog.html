@@ -40,27 +40,35 @@
 </head>
 <body class="lexend-font">
     <!-- header section start -->
-    <header class="fixed w-full">
-        <nav class="bg-floral-white">
+    <header class="fixed w-full z-20">
+        <nav class="bg-floral-white p-3 md:p-0">
             <div class="flex justify-between items-center py-6 max-w-screen-xl mx-auto">
+                <!-- Home Button -->
                 <div>
-                    <a href="index.html"><button class="btn px-6 bg-lightgreen text-lg">Home</button></a>
+                    <a href="index.html">
+                        <button class="btn px-3 bg-lightgreen text-sm md:px-4 md:text-lg">Home</button>
+                    </a>
                 </div>
-                <div class="flex items-center p-3">
-                    <img class="pr-3" src="/assets/logo.png" alt="logo">
-                    <div class="font-semibold text-lg">Donate Bangladesh</div>
+                <!-- Logo and Name (Centered on small screens) -->
+                <div class="flex flex-col items-center text-center md:flex-row md:items-center md:text-left p-3">
+                    <div>
+                        <img class="pr-0 md:pr-3" src="/assets/logo.png" alt="logo">
+                    </div>
+                    <div class="font-semibold text-sm md:pl-3 md:text-xl">Donate Bangladesh</div>
                 </div>
+                <!-- BDT Amount -->
                 <div class="flex items-center p-3">
-                    <img class="pr-3" src="/assets/coin.png" alt="coin">
-                    <div class="font-medium text-lg">5500 BDT</div>
+                    <img class="pr-3 md:w-auto" src="/assets/coin.png" alt="coin">
+                    <div class="font-medium text-sm md:text-lg">5500 BDT</div>
                 </div>
             </div>
         </nav>
     </header>
+    
     <!-- header section end -->
 
     <!-- main section start -->
-    <main class="max-w-screen-xl mx-auto pt-60">
+    <main class="max-w-screen-xl mx-auto pt-60 p-8">
         <div class="flex space-x-5">
             <div class="text-3xl font-extrabold">Important FAQ</div>
             <i class="fa-regular fa-circle-question text-4xl "></i>
