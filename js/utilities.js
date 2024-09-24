@@ -7,11 +7,11 @@ function showSectionById(id){
 }
 
 function buttonChange(id1, id2){
-    document.getElementById('show-donation-list').classList.add('bg-lightgreen', 'bg-transparent', 'border-gray30');
-    document.getElementById('show-donation-history').classList.add('bg-lightgreen', 'bg-transparent', 'border-gray30');
+    document.getElementById('show-donation-list').classList.add('bg-lightgreen', 'bg-gray10');
+    document.getElementById('show-donation-history').classList.add('bg-lightgreen', 'bg-gray10');
 
     document.getElementById(id2).classList.remove('bg-lightgreen');
-    document.getElementById(id1).classList.remove('bg-transparent', 'border-gray30');
+    document.getElementById(id1).classList.remove('bg-gray10');
 }
 
 function showPopup(id){

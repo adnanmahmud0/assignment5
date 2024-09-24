@@ -42,7 +42,7 @@
     <!-- header section start -->
     <header class="fixed w-full z-20">
         <nav class="bg-floral-white p-3 md:p-0">
-            <div class="flex justify-between items-center py-6 max-w-screen-xl mx-auto">
+            <div class="flex justify-between items-center py-6 px-3 max-w-screen-xl mx-auto">
                 <!-- Home Button -->
                 <div>
                     <a href="index.html">
@@ -54,12 +54,13 @@
                     <div>
                         <img class="pr-0 md:pr-3" src="/assets/logo.png" alt="logo">
                     </div>
-                    <div class="font-semibold text-sm md:pl-3 md:text-xl">Donate Bangladesh</div>
+                    <div class="font-semibold text-sm md:pl-3 md:text-xl">DonateBD</div>
                 </div>
                 <!-- BDT Amount -->
-                <div class="flex items-center p-3">
-                    <img class="pr-3 md:w-auto" src="/assets/coin.png" alt="coin">
-                    <div class="font-medium text-sm md:text-lg">5500 BDT</div>
+                <div class="flex items-center">
+                    <img class="pr-3" src="/assets/coin.png" alt="coin">
+                    <div class="pr-3 md:w-auto" id="balance">5500</div>
+                    <div class="pr-3 md:w-auto" >BDT</div>
                 </div>
             </div>
         </nav>
@@ -76,30 +77,30 @@
         <div class="join join-vertical w-full py-8">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+              <div class="collapse-title text-xl font-medium">1. What is Document Object Model (DOM)?</div>
               <div class="collapse-content">
                 <p>The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">How do I get a specific element from the DOM?</div>
+              <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
               <div class="collapse-content">
                 <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM, and why is it useful?</div>
               <div class="collapse-content">
                 <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                  <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+                  <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
                 </div>
               </div>
         </div>
@@ -114,6 +115,11 @@
 
     <!-- js start -->
     <script src="js/utilities.js"></script>
+
+    <script src="js/history.js"></script>
+
+    <script src="js/donation.js"></script>
+
     <script src="js/features.js"></script>
     <!-- js end -->
 </body>
