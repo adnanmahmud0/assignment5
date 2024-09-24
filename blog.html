@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'chinese-black-sev': 'rgb(17, 17, 17, 70%)',
+            'chinese-black': '#111111',
+            'lightgreen': '#B4F461',
+            'gray30': 'rgb(17, 17, 17, 30%)',
+            'gray10': 'rgb(17, 17, 17, 10%)',
+            'floral-white': '#F9F7F3'
+          },
+        },
+      },
+    }
+</script>
+
+</head>
+<body class="lexend-font">
+    <!-- header section start -->
+    <header class="fixed w-full">
+        <nav class="bg-floral-white">
+            <div class="flex justify-between items-center py-6 max-w-screen-xl mx-auto">
+                <div>
+                    <a href="index.html"><button class="btn px-6 bg-lightgreen text-lg">Home</button></a>
+                </div>
+                <div class="flex items-center p-3">
+                    <img class="pr-3" src="/assets/logo.png" alt="logo">
+                    <div class="font-semibold text-lg">Donate Bangladesh</div>
+                </div>
+                <div class="flex items-center p-3">
+                    <img class="pr-3" src="/assets/coin.png" alt="coin">
+                    <div class="font-medium text-lg">5500 BDT</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main class="max-w-screen-xl mx-auto pt-60">
+        <div class="flex space-x-5">
+            <div class="text-3xl font-extrabold">Important FAQ</div>
+            <i class="fa-regular fa-circle-question text-4xl "></i>
+        </div>
+        <div class="join join-vertical w-full py-8">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do I get a specific element from the DOM?</div>
+              <div class="collapse-content">
+                <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+                </div>
+              </div>
+        </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer>
+        <div class="m-20"></div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- js start -->
+    <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
+    <!-- js end -->
+</body>
+</html>
