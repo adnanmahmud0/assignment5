@@ -56,15 +56,15 @@
             </div>
         </nav>
         <div class="flex justify-center space-x-4 pt-12 pb-9 backdrop-blur-xl bg-white/30">
-            <button class="btn font-medium px-8 bg-lightgreen text-lg">Donation</button>
-            <button class="btn bg-transparent font-medium px-8 border-gray30 text-lg">History</button>
+            <button id="show-donation-list" class="btn font-medium px-8 bg-lightgreen text-lg">Donation</button>
+            <button id="show-donation-history" class="btn bg-transparent font-medium px-8 border-gray30 text-lg">History</button>
         </div>
     </header>
     <!-- header section end -->
 
     <!-- main section start -->
-    <main class="max-w-screen-xl mx-auto pt-48">
-        <div>
+    <main class="max-w-screen-xl mx-auto pt-60">
+        <div id="donation-list" >
             <div class="flex border-solid border-gray10 border rounded-2xl m-8 items-center">
                 <div class="w-1/2 p-8">
                     <img src="assets/noakhali.png" alt="">
@@ -135,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="hidden">
+        <div id="donation-history" class="hidden">
             <div class="border-solid border-gray10 border rounded-2xl m-8 items-center">
                 <div class="space-y-4 p-8">
                     <div class="text-chinese-black font-bold text-lg">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</div>
@@ -155,6 +155,18 @@
                 </div>
             </div>
         </div>
+        <!-- Success Popup -->
+        <div id="success-popup" class="fixed inset-0 flex items-center justify-center bg-black/50">
+            <div class="bg-white px-20 py-5 rounded-lg shadow-lg text-center">
+                <div class="font-bold text-2xl pb-3">Congrates!</div>
+                <div class="flex justify-center">
+                    <img class="pb-5" src="assets/coin.png" alt="coin">
+                </div>
+                <p class="text-sm text-chinese-black-sev pb-3">You Have Donated for Humankind</p>
+                <div class="font-bold pb-3">Successfully</div>
+                <button class="btn">close confirmation</button>
+            </div>
+        </div>
     </main>
     <!-- main section end -->
 
@@ -163,5 +175,10 @@
         <div class="m-20"></div>
     </footer>
     <!-- footer section end -->
+
+    <!-- js start -->
+    <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
+    <!-- js end -->
 </body>
 </html>
